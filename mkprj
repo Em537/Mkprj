@@ -1,0 +1,19 @@
+#!/bin/bash
+
+MODE=$1
+if [ -z "${MODE}" ]; then
+	echo nothing
+fi
+NAME=$2
+export DIR=$2
+
+if [ ${MODE} = "cpp" ]; then
+	echo "Cpp!"
+	./make_cpp
+
+
+elif [ ${MODE} = "py" ]; then
+	echo "Python!"
+fi
+
+

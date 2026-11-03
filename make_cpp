@@ -1,0 +1,5 @@
+#!/bin/bash
+echo running make_cpp
+mkdir $DIR
+cp /bin/Mkprj/main.cpp "$DIR"/main.cpp
+cp /bin/Mkprj/Makefile "$DIR"/Makefile
