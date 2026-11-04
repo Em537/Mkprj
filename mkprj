@@ -1,18 +1,21 @@
 #!/bin/bash
 
+MY_PATH="$HOME/Projects/Bash/Mkprj/cpp/make_cpp.bash"
+
 MODE=$1
 if [ -z "${MODE}" ]; then
 	echo nothing
 fi
 NAME=$2
-export DIR=$2
 
-if [ ${MODE} = "cpp" ]; then
-	echo "Cpp!"
-	./make_cpp
+export NAME
+export MY_PATH
+
+if [[ "${MODE}" = "cpp" ]]; then
+	bash "$MY_PATH"
 
 
-elif [ ${MODE} = "py" ]; then
+elif [[ ${MODE} = "py" ]]; then
 	echo "Python!"
 fi
 
